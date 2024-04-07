@@ -3,7 +3,7 @@ import "@fontsource-variable/inter"
 const searchInput = document.querySelector("#searchInput")
 const moviesList = document.querySelector("#movies")
 const urlImg = "https://image.tmdb.org/t/p/w200"
-const API_KEY = import.meta.env.VITE_API_KEY_TMDB
+const API_KEY = import.meta.env.VITE_API_KEY
 const allMoviesURL = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`
 
 let allMovies = []
