@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: "Inter Variable", sans-serif;
+}
+
+.movies__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies__title {
+  margin-inline: auto;
+}
+
+.movies__input {
+  width: 20rem;
+  padding: .625rem;
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+}
+
+.movies__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  gap: .85rem;
+  margin-right: 2.75rem;
+}
+
+.movies__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.movies__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movies__figure {
+  width: 90%;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform .15s;
+  }
+}
+
+.movies__img {
+  width: 100%;
+}
+
+.movies__name,
+h2 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+  margin-block: 0 .5rem;
+}
+
+.movies__overview {
+  font-size: .75rem;
+}
+
+.movie__single {
+  width: 20%;
+  margin-inline: auto;
+}
+
+@media screen and (width <= 1024px) {
+  .movie__single {
+    width: 50%;
+  }
+}
+
+#movie-details {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    text-align: center;
+    text-wrap: balance;
+  }
+}
