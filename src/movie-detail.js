@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search)
 const movieId = urlParams.get("id")
-const API_KEY = "2a4e4a2f96c67501bdac45acc06cddc9"
+const API_KEY = import.meta.env.VITE_API_KEY_TMDB
 const urlImg = "https://image.tmdb.org/t/p/w200"
 
 const movieDetailURL = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`
