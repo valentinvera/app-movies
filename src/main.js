@@ -72,7 +72,7 @@ const displayMovies = movies => {
         return `
         <li class="movies__items">
 
-          <a href="movie-detail.html?id=${movie.id}" target="_blank" class="movies__link ${movieClass}">
+          <a href="src/movie-detail.html?id=${movie.id}" target="_blank" class="movies__link ${movieClass}">
             
             <figure class="movies__figure">
               <img src="${urlImg + movie.poster_path}" class="movies__img" alt="Image not found">
